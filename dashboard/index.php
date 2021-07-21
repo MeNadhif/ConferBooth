@@ -78,7 +78,7 @@
                 </li>
                 <li><a><i class="fa fa-pencil-square-o"></i> Notulensi <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu">
-                    <li><a href="#">Add Notulensi</a></li>
+                    <li><a href="index.php?page=addnotulen_cfs">Add New Notulensi</a></li>
                     <li><a href="#">Download Template</a></li>
                   </ul>
                 </li>
@@ -156,6 +156,10 @@
             # code...
             include 'edit.php';
             break;
+          case 'addnotulen_cfs':
+            # code...
+            include 'addnotulen.php';
+            break;
           default:
             #code...
             include 'home.php';
@@ -168,7 +172,7 @@
       <!-- footer content -->
       <footer>
         <div class="pull-right">
-          Copyright @ 2021 ConferBooth : e_Grenade
+          Copyright @ 2021 ConferBooth : >_eGrenade
         </div>
         <div class="clearfix"></div>
       </footer>

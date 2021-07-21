@@ -5,7 +5,7 @@ include('config.php');
 
 
 <div class="container" style="margin-top:20px">
-	<center><strong><span style="font-size: 16px;">Detail Conference</span></strong></center>
+	<center><strong><span style="font-size: 30px;">Detail Conference</span></strong></center>
 	<hr>
 	<a href="index.php?page=tambah_cfs"><button class="btn btn-dark right">Create New Conference</button></a>
 	<div class="table-responsive">

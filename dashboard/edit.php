@@ -2,9 +2,7 @@
 
 
 <div class="container" style="margin-top:20px">
-	<center>
-		<font size="6">Edit Data</font>
-	</center>
+	<center><strong><span style="font-size: 30px;">Edit Data</span></strong></center>
 
 	<hr>
 
@@ -15,7 +13,7 @@
 		$id = $_GET['id'];
 
 		//query ke database SELECT tabel mahasiswa berdasarkan id = $id
-		$select = mysqli_query($koneksi, "SELECT * FROM mahasiswa WHERE id='$id'") or die(mysqli_error($koneksi));
+		$select = mysqli_query($koneksi, "SELECT * FROM confer WHERE id='$id'") or die(mysqli_error($koneksi));
 
 		//jika hasil query = 0 maka muncul pesan error
 		if (mysqli_num_rows($select) == 0) {
@@ -32,11 +30,11 @@
 	<?php
 	//jika tombol simpan di tekan/klik
 	if (isset($_POST['submit'])) {
-		$nama			  = $_POST['nama'];
-		$desc	= $_POST['desc'];
+		$nama			= $_POST['nama'];
+		$desk			= $_POST['desk'];
 		$Program_Studi	= $_POST['Program_Studi'];
 
-		$sql = mysqli_query($koneksi, "UPDATE confer SET nama='$nama', desc='$desc', Program_Studi='$Program_Studi' WHERE id='$id'") or die(mysqli_error($koneksi));
+		$sql = mysqli_query($koneksi, "UPDATE confer SET nama='$nama', desk='$desk', Program_Studi='$Program_Studi' WHERE id='$id'") or die(mysqli_error($koneksi));
 
 		if ($sql) {
 			echo '<script>alert("Berhasil menyimpan data."); document.location="index.php?page=tampil_mhs";</script>';
@@ -46,74 +44,34 @@
 	}
 	?>
 
-	<form action="index.php?page=edit_mhs&id=<?php echo $id; ?>" method="post">
+	<form style="font-size: 16px;" action="index.php?page=edit_mhs&id=<?php echo $id; ?>" method="post">
 		<div class="item form-group">
-			<label class="col-form-label col-md-3 col-sm-3 label-align">Nim</label>
-			<div class="col-md-6 col-sm-6">
-				<input type="text" name="Nim" class="form-control" size="4" value="<?php echo $data['Nim']; ?>" readonly required>
-			</div>
-		</div>
-		<div class="item form-group">
-			<label class="col-form-label col-md-3 col-sm-3 label-align">Nama Mahasiswa</label>
-			<div class="col-md-6 col-sm-6">
-				<input type="text" name="nama" class="form-control" value="<?php echo $data['nama']; ?>" required>
-			</div>
-		</div>
-		<div class="item form-group">
-			<label class="col-form-label col-md-3 col-sm-3 label-align">Jenis Kelamin</label>
+			<label class="col-form-label col-md-3 col-sm-3 label-align">Conference Name</label>
 			<div class="col-md-6 col-sm-6 ">
-				<div class="btn-group" data-toggle="buttons">
-					<label class="btn btn-secondary" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-						<input type="radio" class="join-btn" name="Jenis_Kelamin" value="Laki-Laki" <?php if ($data['Jenis_Kelamin'] == 'Laki-Laki') {
-																										echo 'checked';
-																									} ?> required>Laki-Laki
-					</label>
-					<label class="btn btn-primary" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
-						<input type="radio" class="join-btn" name="Jenis_Kelamin" value="Perempuan" <?php if ($data['Jenis_Kelamin'] == 'Perempuan') {
-																										echo 'checked';
-																									} ?> required>Perempuan
-					</label>
-				</div>
+				<input type="text" id="name" name="name" class="form-control" value="<?php echo $data['name']; ?>" required>
 			</div>
 		</div>
 		<div class="item form-group">
-			<label class="col-form-label col-md-3 col-sm-3 label-align">Program Studi</label>
+			<label class="col-form-label col-md-3 col-sm-3 label-align">Description</label>
 			<div class="col-md-6 col-sm-6">
-				<select name="Program_Studi" class="form-control" required>
-					<option value="">Pilih Program Studi</option>
-					<option value="Teknik Informatika" <?php if ($data['Program_Studi'] == 'Teknik Informatika') {
-															echo 'selected';
-														} ?>>Teknik Informatika</option>
-					<option value="Teknik Sipil" <?php if ($data['Program_Studi'] == 'Teknik Sipil') {
-														echo 'selected';
-													} ?>>Teknik Sipil</option>
-					<option value="Teknik Kimia" <?php if ($data['Program_Studi'] == 'Teknik Kimia') {
-														echo 'selected';
-													} ?>>Teknik Kimia</option>
-					<option value="Teknik Elektro" <?php if ($data['Program_Studi'] == 'Teknik Elektro') {
-														echo 'selected';
-													} ?>>Teknik Elektro</option>
-					<option value="Akuntansi" <?php if ($data['Program_Studi'] == 'Akuntansi') {
-													echo 'selected';
-												} ?>>Akuntansi</option>
-					<option value="Manajemen" <?php if ($data['Program_Studi'] == 'Manajemen') {
-													echo 'selected';
-												} ?>>Manajemen</option>
-					<option value="Farmasi" <?php if ($data['Program_Studi'] == 'Farmasi') {
-												echo 'selected';
-											} ?>>Farmasi</option>
-					<option value="Hukum" <?php if ($data['Program_Studi'] == 'Hukum') {
-												echo 'selected';
-											} ?>>Hukum</option>
-					<option value="Kedokteran" <?php if ($data['Program_Studi'] == 'Kedokteran') {
-													echo 'selected';
-												} ?>>Kedokteran</option>
-				</select>
+				<textarea rows="4" id="desk" name="desk" class="form-control" value="<?php echo $data['desk']; ?>" required></textarea>
+			</div>
+		</div>
+		<div class="item form-group">
+			<label class="col-form-label col-md-3 col-sm-3 label-align">Conference Schedule</label>
+			<div class="col-md-6 col-sm-6 ">
+				<input type="date" id="schedule" name="schedule" class="form-control" value="<?php echo $data['schedule']; ?>" required>
+			</div>
+		</div>
+		<div class="item form-group">
+			<label class="col-form-label col-md-3 col-sm-3 label-align">Conference Link</label>
+			<div class="col-md-6 col-sm-6 ">
+				<input type="text" id="location" name="location" class="form-control" value="<?php echo $data['location']; ?>" required>
 			</div>
 		</div>
 		<div class="item form-group">
 			<div class="col-md-6 col-sm-6 offset-md-3">
-				<input type="submit" name="submit" class="btn btn-primary" value="Simpan">
+				<input type="submit" name="submit" class="btn btn-primary" value="SAVE">
 				<a href="index.php?page=tampil_mhs" class="btn btn-warning">Kembali</a>
 			</div>
 		</div>
