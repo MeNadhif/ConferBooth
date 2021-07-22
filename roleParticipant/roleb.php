@@ -12,7 +12,7 @@
         body {
             margin: 0;
             padding: 0;
-            background: url(bgrd.jpg);
+            background: url(../images/bgrd.jpg);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -116,7 +116,7 @@
 </head>
 
 <body>
-    <center><img src="cf.png" alt="conferbooth" style="height: 40px; width: 300px; padding-top: 65px;"></center>
+    <center><img src="../images/cf.png" alt="conferbooth" style="height: 40px; width: 300px; padding-top: 65px;"></center>
     <div class="input">
         <center><i class="fas fa-user-circle"></i></center>
         <button type="submit" name="Participant" class="btn-input">Participant</button>

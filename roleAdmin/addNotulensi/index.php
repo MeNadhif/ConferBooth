@@ -7,22 +7,22 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="assets/images/unusa.png" type="image/ico" />
+  <link rel="icon" href="../../assets/images/unusa.png" type="image/ico" />
 
   <title> Sistem Informasi Pengelolaan Rapat </title>
 
   <!-- Bootstrap -->
-  <link href="assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Font Awesome -->
-  <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../../assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <!-- NProgress -->
-  <link href="assets/nprogress/nprogress.css" rel="stylesheet">
+  <link href="../../assets/nprogress/nprogress.css" rel="stylesheet">
   <!-- iCheck -->
-  <link href="assets/iCheck/skins/flat/green.css" rel="stylesheet">
+  <link href="../../assets/iCheck/skins/flat/green.css" rel="stylesheet">
   <!-- bootstrap-progressbar -->
-  <link href="assets/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+  <link href="../../assets/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
   <!-- Custom Theme Style -->
-  <link href="assets/css/custom.min.css" rel="stylesheet">
+  <link href="../../assets/css/custom.min.css" rel="stylesheet">
 </head>
 
 <body class="nav-md">
@@ -42,7 +42,7 @@
           <!-- menu profile quick info -->
           <div class="profile clearfix">
             <div class="profile_pic">
-              <img src="assets/images/user.png" alt="user" class="img-circle profile_img">
+              <img src="../../assets/images/user.png" alt="user" class="img-circle profile_img">
             </div>
             <div class="profile_info">
               <span style="font-size: 15px;">Welcome,</span>
@@ -116,7 +116,7 @@
             <ul class=" navbar-right">
               <li class="nav-item dropdown open">
                 <a href="#" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
-                  <img src="assets/images/user.png" alt="">User
+                  <img src="../../assets/images/user.png" alt="">User
                 </a>
                 <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="#"> Profile</a>
@@ -181,21 +181,21 @@
   </div>
 
   <!-- jQuery -->
-  <script src="assets/jquery/dist/jquery.min.js"></script>
+  <script src="../../assets/jquery/dist/jquery.min.js"></script>
   <!-- Bootstrap -->
-  <script src="assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../../assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <!-- FastClick -->
-  <script src="assets/fastclick/lib/fastclick.js"></script>
+  <script src="../../assets/fastclick/lib/fastclick.js"></script>
   <!-- NProgress -->
-  <script src="assets/nprogress/nprogress.js"></script>
+  <script src="../../assets/nprogress/nprogress.js"></script>
   <!-- bootstrap-progressbar -->
-  <script src="assets/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+  <script src="../../assets/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
   <!-- iCheck -->
-  <script src="assets/iCheck/icheck.min.js"></script>
+  <script src="../../assets/iCheck/icheck.min.js"></script>
   <!-- Skycons -->
-  <script src="assets/skycons/skycons.js"></script>
+  <script src="../../assets/skycons/skycons.js"></script>
   <!-- Custom Theme Scripts -->
-  <script src="assets/js/custom.min.js"></script>
+  <script src="../../assets/js/custom.min.js"></script>
 
 </body>
 
