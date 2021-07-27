@@ -119,7 +119,9 @@
     <center><img src="../images/cf.png" alt="conferbooth" style="height: 40px; width: 300px; padding-top: 65px;"></center>
     <div class="input">
         <center><i class="fas fa-user-circle"></i></center>
-        <button type="submit" name="Participant" class="btn-input">Participant</button>
+        <form action="./Participant/index.php" method="get">
+            <button type="submit" name="Participant" class="btn-input">Peserta</button>
+        </form>
     </div>
     <h2><i class="fas fa-sign-out-alt"></i><a href="#"> Log out</a></h2>
     <div class="bottom">

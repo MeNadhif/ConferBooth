@@ -46,7 +46,7 @@
             </div>
             <div class="profile_info">
               <span style="font-size: 15px;">Selamat Datang,</span>
-              <h2 style="font-size: 20px;">Admin</h2>
+              <h2 style="font-size: 20px;">Peserta</h2>
             </div>
           </div>
           <!-- /menu profile quick info -->
@@ -61,19 +61,7 @@
                 </li>
                 <li><a href="#"><i class="fa fa-calendar"></i> Agenda <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu">
-                    <li><a href="#">Daftar Agenda Rapat</a></li>
-                    <li><a href="index.php?page=tampil_cfs">Detail Agenda Rapat</a></li>
-                  </ul>
-                </li>
-                <li><a><i class="fa fa-user"></i> Peserta <span class="fa fa-chevron-down"></span></a>
-                  <ul class="nav child_menu">
-                    <li><a href="#">Daftar Peserta</a></li>
-                    <li><a href="#">Detail Peserta</a></li>
-                  </ul>
-                </li>
-                <li><a><i class="fa fa-file"></i> Rapat <span class="fa fa-chevron-down"></span></a>
-                  <ul class="nav child_menu">
-                    <li><a href="index.php?page=tambah_cfs">Buat Rapat Baru</a></li>
+                    <li><a href="index.php?page=tampil_cfs">Daftar Agenda Rapat</a></li>
                   </ul>
                 </li>
                 <li><a><i class="fa fa-pencil-square-o"></i> Notulensi <span class="fa fa-chevron-down"></span></a>
@@ -116,7 +104,7 @@
             <ul class=" navbar-right">
               <li class="nav-item dropdown open">
                 <a href="#" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
-                  <img src="../../assets/images/user.png" alt="">Admin
+                  <img src="../../assets/images/user.png" alt=""> Peserta
                 </a>
                 <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="#"> Profil</a>
@@ -143,6 +131,10 @@
           case 'tampil_cfs':
             # code...
             include 'tampil.php';
+            break;
+          case 'status_cfs':
+            # code...
+            include 'status.php';
             break;
           case 'tambah_cfs':
             # code...

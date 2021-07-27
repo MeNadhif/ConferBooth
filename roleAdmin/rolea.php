@@ -120,9 +120,9 @@
     <div class="input">
         <center><i class="fas fa-user-circle"></i></center>
         <form action="./addNotulensi/index.php" method="get">
-            <button type="submit" name="Admin" class="btn-input">Admin Page</button>
+            <button type="submit" name="Admin" class="btn-input">Admin</button>
         </form>
-        <button type="submit" name="Participant" class="btn-input">Participant</button>
+        <button type="submit" name="Participant" class="btn-input">Peserta</button>
     </div>
     <h2><i class="fas fa-sign-out-alt"></i><a href="#"> Log out</a></h2>
     <div class="bottom">
